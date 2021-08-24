@@ -1,22 +1,17 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
-import PostCard from "./src/Components/PostCard";
+import { NavigationContainer } from "@react-navigation/native";
+import { StatusBar, View } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
+import Home from "./src/Screens/Home";
 
+const statusBarStyle = "dark-content";
 function App() {
   return (
-    <View style={styles.container}>
-      <PostCard />
-    </View>
+    <NavigationContainer>
+      <StatusBar barStyle={statusBarStyle} backgroundColor="white" />
+      <Home />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
 
 export default App;
