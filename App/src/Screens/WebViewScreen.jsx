@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import WebView from "react-native-webview";
 import Icon from "react-native-vector-icons/EvilIcons";
 

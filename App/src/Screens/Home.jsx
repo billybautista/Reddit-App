@@ -49,13 +49,6 @@ function Home() {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
-        // cardStyle: {
-        //   backgroundColor: "#000",
-        // },
-        // headerStyle: {
-        //   backgroundColor: "#000",
-        // },
-        // headerTintColor: "#FF4502",
       }}
     >
       <Stack.Screen name="Sreen" component={TopTabNavigator} />
